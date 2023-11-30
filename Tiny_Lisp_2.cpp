@@ -27,11 +27,9 @@ void load_script() {
     try {
         load_script(filename.c_str(), true);
     } catch (const std::ios_base::failure& e) {
-        std::cerr << "Error de archivo: " << e.what() << std::endl;
-        return;
+        std::cerr << "Error al abrir el archivo: " << e.what() << std::endl;
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
-        return;
     }
 }
 
@@ -44,4 +42,5 @@ int main() {
 
     return 0;
 }
+
 
