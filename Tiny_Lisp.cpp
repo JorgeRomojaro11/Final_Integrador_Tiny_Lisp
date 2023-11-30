@@ -31,3 +31,9 @@ int main() {
         load_script();
     } catch (const std::ios_base::failure& e) {
         std::cerr << "Error de lectura: " << e.what() << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+
+    return 0;
+}
