@@ -34,7 +34,7 @@ void load_script(const char* filename, bool show_script = false)
 
         if (file.peek() == ifstream::traits_type::eof())
         {
-            cerr << "El archivo está vacío." << endl;
+            cerr << "El archivo esta vacio." << endl;
             return;
         }
 
