@@ -26,3 +26,8 @@ void load_script() {
 
     load_script(filename.c_str(), true);
 }
+int main() {
+    try {
+        load_script();
+    } catch (const std::ios_base::failure& e) {
+        std::cerr << "Error de lectura: " << e.what() << std::endl;
