@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Final_Integrador_Tiny_Lisp",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Final_Integrador_Tiny_Lisp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Final_Integrador_Tiny_Lisp-Debug-3ff237cb4e476b55fa16.json",
+					"name" : "Final_Integrador_Tiny_Lisp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Jorge Romojaro/Documents/GitHub/Final_Integrador_Tiny_Lisp/cmake-build-debug",
+		"source" : "C:/Users/Jorge Romojaro/Documents/GitHub/Final_Integrador_Tiny_Lisp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

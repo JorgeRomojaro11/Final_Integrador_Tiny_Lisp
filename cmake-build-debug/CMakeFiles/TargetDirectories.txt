@@ -1,0 +1,3 @@
+C:/Users/Jorge Romojaro/Documents/GitHub/Final_Integrador_Tiny_Lisp/cmake-build-debug/CMakeFiles/Final_Integrador_Tiny_Lisp.dir
+C:/Users/Jorge Romojaro/Documents/GitHub/Final_Integrador_Tiny_Lisp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Jorge Romojaro/Documents/GitHub/Final_Integrador_Tiny_Lisp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
