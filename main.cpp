@@ -4,9 +4,9 @@
 
 void load_script(const char* filename, bool show_script = false) {
     std::ifstream file(filename);
+
     if (!file.is_open()) {
-        std::cerr << "Error: No se pudo abrir el archivo '" << filename << "'.\n";
-        return;
+        throw std::ios_base::failure("No se pudo abrir el archivo '" + std::string(filename) + "'.");
     }
 
     std::string line;
@@ -18,22 +18,30 @@ void load_script(const char* filename, bool show_script = false) {
 
     file.close();
 }
-    }
+
 void load_script() {
     std::string filename;
     std::cout << "Ingrese el nombre del archivo: ";
     std::cin >> filename;
 
-    load_script(filename.c_str(), true);
+    try {
+        load_script(filename.c_str(), true);
+    } catch (const std::ios_base::failure& e) {
+        std::cerr << "Error de archivo: " << e.what() << std::endl;
+        return;
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        return;
+    }
 }
+
 int main() {
     try {
         load_script();
-    } catch (const std::ios_base::failure& e) {
-        std::cerr << "Error de lectura: " << e.what() << std::endl;
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+    } catch (...) {
+        std::cerr << "Error desconocido." << std::endl;
     }
 
     return 0;
 }
+
